@@ -1,0 +1,40 @@
+# =============================================================================
+# UK Student Visa RAG — Python dependencies
+# Tested on Python 3.13. Use `>=` minimums so security patches flow through;
+# the exact resolved versions can be frozen later with `pip freeze > requirements.lock`.
+# =============================================================================
+
+# --- Core RAG framework (LangChain) ---
+langchain>=0.3.7
+langchain-community>=0.3.7
+langchain-anthropic>=0.3.0          # Claude chat model integration
+langchain-huggingface>=0.1.2        # bge embeddings via sentence-transformers
+langchain-chroma>=0.1.4             # Chroma vector store integration
+
+# --- Vector store (local, persistent, free) ---
+chromadb>=0.5.18
+
+# --- Embeddings & cross-encoder reranking (open-source, runs on CPU) ---
+sentence-transformers>=3.3.0
+
+# --- LLM provider SDK (used under the hood by langchain-anthropic) ---
+anthropic>=0.39.0
+
+# --- Data ingestion / scraping ---
+requests>=2.32.0
+beautifulsoup4>=4.12.3
+lxml>=5.3.0                         # fast HTML parser backend for BeautifulSoup
+markdownify>=0.13.1                 # HTML -> clean Markdown conversion
+
+# --- Web UI ---
+streamlit>=1.40.0
+
+# --- Config / utilities ---
+python-dotenv>=1.0.1
+
+# --- Evaluation ---
+pandas>=2.2.0
+numpy>=1.26.0
+
+# --- Testing ---
+pytest>=8.3.0

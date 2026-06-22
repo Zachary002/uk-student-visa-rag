@@ -1,0 +1,107 @@
+{
+  "description": "Held-out evaluation set for the UK Student Visa RAG assistant. In-scope cases carry the source that SHOULD be retrieved (matched as a substring of the source URL) and key facts the answer MUST contain. Out-of-scope cases must be refused.",
+  "cases": [
+    {
+      "id": "work-hours-termtime",
+      "category": "in_scope",
+      "question": "How many hours can I work per week during term time on a Student visa?",
+      "expected_source": "working/student-work",
+      "answer_must_include": ["20 hours"]
+    },
+    {
+      "id": "self-employed",
+      "category": "in_scope",
+      "question": "Can I be self-employed on a Student visa?",
+      "expected_source": "gov.uk/student-visa",
+      "answer_must_include": ["self-employed"]
+    },
+    {
+      "id": "financial-requirement",
+      "category": "in_scope",
+      "question": "How much money do I need to show for a Student visa application?",
+      "expected_source": "student-visa/money",
+      "answer_must_include": ["£"]
+    },
+    {
+      "id": "graduate-length",
+      "category": "in_scope",
+      "question": "How long can I stay in the UK on a Graduate visa?",
+      "expected_source": "graduate-visa",
+      "answer_must_include": ["2 years"]
+    },
+    {
+      "id": "graduate-cost",
+      "category": "in_scope",
+      "question": "How much does the Graduate visa cost to apply for?",
+      "expected_source": "graduate-visa/how-much-it-costs",
+      "answer_must_include": ["£"]
+    },
+    {
+      "id": "gp-registration",
+      "category": "in_scope",
+      "question": "How do I register with a GP as an international student?",
+      "expected_source": "how-to-register-with-a-gp-surgery",
+      "answer_must_include": ["register"]
+    },
+    {
+      "id": "bank-account",
+      "category": "in_scope",
+      "question": "What do I need to open a UK bank account as a student?",
+      "expected_source": "opening-a-bank-account",
+      "answer_must_include": ["address"]
+    },
+    {
+      "id": "healthcare-surcharge",
+      "category": "in_scope",
+      "question": "Do I have to pay the immigration health surcharge when I apply?",
+      "expected_source": "healthcare-immigration-application",
+      "answer_must_include": ["surcharge"]
+    },
+    {
+      "id": "english-level",
+      "category": "in_scope",
+      "question": "What level of English do I need for a Student visa?",
+      "expected_source": "knowledge-of-english",
+      "answer_must_include": ["english"]
+    },
+    {
+      "id": "family-members",
+      "category": "in_scope",
+      "question": "Can I bring my partner and children with me on a Student visa?",
+      "expected_source": "student-visa/family-members",
+      "answer_must_include": ["partner"]
+    },
+    {
+      "id": "switch-visa",
+      "category": "in_scope",
+      "question": "Can I switch to a Student visa from inside the UK?",
+      "expected_source": "switch-to-this-visa",
+      "answer_must_include": ["offer"]
+    },
+    {
+      "id": "decision-time",
+      "category": "in_scope",
+      "question": "How long does it take to get a decision on a Student visa?",
+      "expected_source": "gov.uk/student-visa",
+      "answer_must_include": ["3 weeks"]
+    },
+    {
+      "id": "oos-driving-licence",
+      "category": "out_of_scope",
+      "question": "How do I apply for a UK driving licence?",
+      "expect_refusal": true
+    },
+    {
+      "id": "oos-pizza",
+      "category": "out_of_scope",
+      "question": "What is the best pizza restaurant in London?",
+      "expect_refusal": true
+    },
+    {
+      "id": "oos-weather",
+      "category": "out_of_scope",
+      "question": "What is the weather forecast for tomorrow?",
+      "expect_refusal": true
+    }
+  ]
+}

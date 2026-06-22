@@ -1,0 +1,12 @@
+# Streamlit theme — a clean, gov.uk-inspired palette (blue #1d70b8) so the UI
+# visually echoes the official sources the answers are grounded in.
+[theme]
+primaryColor = "#1d70b8"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f3f2f1"
+textColor = "#0b0c0c"
+font = "sans serif"
+
+[server]
+# Friendlier defaults for local runs and Hugging Face Spaces.
+headless = true
