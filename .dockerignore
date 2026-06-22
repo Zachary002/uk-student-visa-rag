@@ -1,0 +1,9 @@
+.git
+.venv
+.env
+data/chroma
+data/raw
+**/__pycache__
+*.pyc
+.pytest_cache
+.DS_Store

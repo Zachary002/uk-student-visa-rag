@@ -3,10 +3,8 @@ title: UK Student Visa Assistant
 emoji: 🎓
 colorFrom: blue
 colorTo: indigo
-sdk: streamlit
-sdk_version: 1.40.0
-app_file: app/streamlit_app.py
-python_version: "3.11"
+sdk: docker
+app_port: 7860
 pinned: false
 ---
 
@@ -26,7 +24,7 @@ built-in **anti-hallucination guard** that refuses to answer when it isn't sure.
 
 ---
 
-**🔗 Live demo:** _add your Hugging Face Space URL here after deploying_
+**🔗 Live demo:** https://huggingface.co/spaces/zacharyzhang1002/uk-student-visa-rag
 
 **📊 Results** (held-out eval — see [Evaluation](#-evaluation)): Retrieval
 Hit-Rate@4 **100%** · MRR **0.78** · Answer correctness **100%** · Refusal
